@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,7 @@
             --container-bg: #16213e;
             --border-color: #0f3460;
         }
+
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: var(--bg-color);
@@ -27,6 +29,7 @@
             align-items: center;
             min-height: 100vh;
         }
+
         .container {
             max-width: 900px;
             width: 100%;
@@ -35,56 +38,81 @@
             box-shadow: 0 10px 50px rgba(41, 217, 213, 0.15);
             overflow: hidden;
         }
+
         .header {
-            background: url('images/3.png') center / cover no-repeat; /* Using 3.png as background */
+            background: url('images/3.png') center / cover no-repeat;
+            /* Using 3.png as background */
             color: var(--primary-color);
-            padding: 5px; /* Very compact padding */
+            padding: 5px;
+            /* Very compact padding */
             display: flex;
-            align-items: flex-end; /* Align items to the bottom */
-            gap: 25px; /* Adjusted gap */
+            align-items: flex-end;
+            /* Align items to the bottom */
+            gap: 25px;
+            /* Adjusted gap */
         }
+
         .profile-photo {
-            width: 220px; /* Slightly larger */
-            height: 220px; /* Slightly larger */
-            border-radius: 0; /* Changed to rectangular */
-            border: none; /* Removed border */
-            object-fit: contain; /* Ensure photo is not cropped */
-            margin-top: 20px; /* Pushed down */
+            width: 220px;
+            /* Slightly larger */
+            height: 220px;
+            /* Slightly larger */
+            border-radius: 0;
+            /* Changed to rectangular */
+            border: none;
+            /* Removed border */
+            object-fit: contain;
+            /* Ensure photo is not cropped */
+            margin-top: 20px;
+            /* Pushed down */
         }
+
         .header-info h1 {
             margin: 0;
-            font-size: 2em; /* Made smaller */
+            font-size: 2em;
+            /* Made smaller */
             font-weight: 700;
             color: #ffffff;
         }
+
         .header-info h2 {
             margin: 5px 0 0;
-            font-size: 1.1em; /* Slightly increased for readability */
+            font-size: 1.1em;
+            /* Slightly increased for readability */
             font-weight: 400;
-            color: #ffffff; /* Changed to white for better contrast */
+            color: #ffffff;
+            /* Changed to white for better contrast */
         }
+
         .main-content {
             padding: 40px;
         }
+
         .contacts {
             display: flex;
-            flex-wrap: wrap; /* Allow items to wrap */
-            justify-content: center; /* Center items */
-            gap: 20px; /* Add space between items */
+            flex-wrap: wrap;
+            /* Allow items to wrap */
+            justify-content: center;
+            /* Center items */
+            gap: 20px;
+            /* Add space between items */
             background-color: var(--border-color);
             padding: 15px 40px;
             border-bottom: 1px solid #0f3460;
             font-size: 0.9em;
         }
+
         .contact-item {
             color: var(--primary-color);
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
         }
+
         .contact-item:hover {
             color: var(--secondary-color);
         }
+
         h3 {
             color: var(--primary-color);
             font-size: 1.5em;
@@ -93,17 +121,20 @@
             margin-top: 30px;
             margin-bottom: 20px;
         }
+
         .summary p {
             font-size: 1.1em;
             line-height: 1.6;
             text-align: justify;
         }
+
         .job {
             margin-bottom: 25px;
             padding-left: 25px;
             border-left: 3px solid var(--secondary-color);
             position: relative;
         }
+
         .job::before {
             content: '';
             position: absolute;
@@ -115,43 +146,52 @@
             border-radius: 50%;
             border: 2px solid var(--container-bg);
         }
+
         .job-title {
             font-size: 1.2em;
             font-weight: 700;
             color: var(--primary-color);
             margin: 0;
         }
+
         .job-company {
             font-size: 1em;
             font-weight: 500;
             color: var(--secondary-color);
             margin: 5px 0;
         }
+
         .job-period {
             font-size: 0.9em;
             color: #8892b0;
             margin-bottom: 10px;
         }
+
         .job-achievements {
             margin: 0;
             padding-left: 20px;
         }
+
         .job-achievements li {
             margin-bottom: 8px;
             line-height: 1.5;
         }
+
         .skills-section {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 30px;
         }
+
         h4 {
             color: var(--primary-color);
         }
+
         .skills-list {
             list-style-type: none;
             padding: 0;
         }
+
         .skills-list li {
             background-color: var(--border-color);
             color: var(--primary-color);
@@ -160,23 +200,28 @@
             margin-bottom: 8px;
             font-weight: 500;
         }
+
         .education-item {
             margin-bottom: 15px;
         }
+
         .education-title {
             font-weight: 700;
             font-size: 1.1em;
             color: var(--primary-color);
         }
+
         .education-source {
             color: var(--secondary-color);
             font-weight: 500;
         }
+
         .footer-section {
             font-style: italic;
             color: #8892b0;
             line-height: 1.6;
         }
+
         .contact-button {
             display: inline-block;
             background-color: var(--secondary-color);
@@ -189,32 +234,50 @@
             text-align: center;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
+
         .contact-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(41, 217, 213, 0.2);
         }
 
         @media (max-width: 768px) {
-            body { padding: 0; }
+            body {
+                padding: 0;
+            }
+
             .header {
                 flex-direction: column;
                 text-align: center;
-                align-items: center; /* Center items horizontally in column layout */
+                align-items: center;
+                /* Center items horizontally in column layout */
                 padding: 30px 20px;
-                gap: 0px; /* Further reduced gap for mobile */
+                gap: 0px;
+                /* Further reduced gap for mobile */
             }
+
             .profile-photo {
                 width: 120px;
                 height: 120px;
             }
-            .header-info h1 { font-size: 2em; }
-            .header-info h2 { font-size: 1.1em; }
-            .main-content { padding: 30px 25px; }
+
+            .header-info h1 {
+                font-size: 2em;
+            }
+
+            .header-info h2 {
+                font-size: 1.1em;
+            }
+
+            .main-content {
+                padding: 30px 25px;
+            }
+
             .contacts {
                 flex-direction: column;
                 gap: 10px;
                 align-items: center;
             }
+
             .skills-section {
                 grid-template-columns: 1fr;
                 gap: 0;
@@ -223,6 +286,7 @@
     </style>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
 
     <div class="container">
@@ -232,7 +296,8 @@
                 <h1>Демидович Дмитрий</h1>
                 <h2>HR-Tech Архитектор & Эксперт по интеллектуальной автоматизации</h2>
                 <div style="margin-top: 15px; color: #c5c6c7; font-size: 1.0em; line-height: 1.6; font-weight: 500;">
-                    Проектирую и внедряю экосистемы, где ИИ-агенты и программные роботы забирают на себя рутину, освобождая до 70% времени вашей команды.
+                    Проектирую и внедряю экосистемы, где ИИ-агенты и программные роботы забирают на себя рутину,
+                    освобождая до 70% времени вашей команды.
                 </div>
             </div>
         </header>
@@ -241,13 +306,17 @@
             <a href="tel:+996555910352" class="contact-item">+996 555 91-03-52</a>
             <a href="mailto:demidovich.dm@gmail.com" class="contact-item">demidovich.dm@gmail.com</a>
             <a href="https://smart-flow.biz/" target="_blank" class="contact-item">smart-flow.biz</a>
-                    </div>
+        </div>
 
         <main class="main-content">
             <section class="summary">
                 <h3>Профессиональное резюме</h3>
                 <p>
-                    Я специализируюсь на стыке двух миров: глубокого понимания человеческого капитала и передовых технологий автоматизации. Моя цель — избавить бизнес от «углеродной рутины», переложив цикличные задачи на плечи ИИ-агентов и программных роботов. Обладая 9-летним опытом в аналитике и управлении, я не просто внедряю софт — я проектирую экосистемы, в которых найм, онбординг и продажи работают на автопилоте.
+                    Я специализируюсь на стыке двух миров: глубокого понимания человеческого капитала и передовых
+                    технологий автоматизации. Моя цель — избавить бизнес от «углеродной рутины», переложив цикличные
+                    задачи на плечи ИИ-агентов и программных роботов. Обладая 9-летним опытом в аналитике и управлении,
+                    я не просто внедряю софт — я проектирую экосистемы, в которых найм, онбординг и продажи работают на
+                    автопилоте.
                 </p>
             </section>
 
@@ -257,48 +326,74 @@
                     <p class="job-title">Кейс: Управление талантами (Hello World)</p>
                     <p class="job-company">Роль: Senior HR-Tech & RPA Developer</p>
                     <ul class="job-achievements" style="margin-top: 10px;">
-                        <li><strong>Суть:</strong> Спроектировал и внедрил автоматизированную воронку найма в Битрикс24.</li>
-                        <li><strong>Результат:</strong> 0 потерянных кандидатов, автоматизация уведомлений, сокращение времени найма в 3 раза.</li>
+                        <li><strong>Задача:</strong> Спроектировать и внедрить автоматизированную воронку найма в
+                            Битрикс24.</li>
+                        <li><strong>Результат:</strong> Отсутствие потерянных кандидатов, автоматизация уведомлений,
+                            сокращение
+                            времени найма в 3 раза.</li>
                     </ul>
                 </div>
                 <div class="job">
                     <p class="job-title">Кейс: Разработка Fullstack-решения для ритейла (Мобильная CRM)</p>
-                    <p class="job-company">Роль: Founder SmartFlow.kg / Lead Fullstack Developer & Integration Architect</p>
+                    <p class="job-company">Роль: Founder SmartFlow.kg / Lead Fullstack Developer & Integration Architect
+                    </p>
                     <ul class="job-achievements" style="margin-top: 10px; margin-bottom: 15px;">
-                        <li><strong>Задача:</strong> Автоматизировать работу полевых сотрудников и синхронизировать складские остатки в реальном времени.</li>
-                        <li><strong>Решение:</strong> Проектирование и разработка «с нуля» мобильного приложения «Торговый Агент» (стек: React Native + Firebase/Firestore). Реализована сложная логика Front + Back + DB.</li>
-                        <li><strong>Результат:</strong> Формирование отчетности в 1 клик, полное исключение ошибок в остатках, рост эффективности отдела продаж на 40%.</li>
+                        <li><strong>Задача:</strong> Автоматизировать работу полевых сотрудников и синхронизировать
+                            складские остатки в реальном времени.</li>
+                        <li><strong>Решение:</strong> Проектирование и разработка «с нуля» мобильного приложения
+                            «Торговый Агент» (стек: React Native + Firebase/Firestore). Реализована сложная логика Front
+                            + Back + DB.</li>
+                        <li><strong>Результат:</strong> Формирование отчетности в 1 клик, полное исключение ошибок в
+                            остатках, рост эффективности отдела продаж на 40%.</li>
                     </ul>
-                    <a href="https://smart-flow.biz" target="_blank" style="color: var(--secondary-color); text-decoration: none; font-weight: 500; font-size: 0.95em; padding-left: 20px; display: inline-block;">➔ Подробное описание архитектуры и других кейсов SmartFlow.kg</a>
+                    <a href="https://smart-flow.biz" target="_blank"
+                        style="color: var(--secondary-color); text-decoration: none; font-weight: 500; font-size: 0.95em; padding-left: 20px; display: inline-block;">➔
+                        Подробное описание архитектуры и других кейсов SmartFlow.kg</a>
                 </div>
                 <div class="job">
                     <p class="job-title">Кейс: n8n / AI Интеграции</p>
                     <p class="job-company">Роль: AI Automation Expert</p>
                     <ul class="job-achievements" style="margin-top: 10px;">
-                        <li><strong>Суть:</strong> Создание кастомных сценариев автоматизации и внедрение LLM-ассистентов.</li>
-                        <li><strong>Результат:</strong> Ускорение обработки входящих заявок в 5 раз, поддержка 24/7.</li>
+                        <li><strong>Задача:</strong> Создание кастомных сценариев автоматизации и внедрение
+                            LLM-ассистентов.</li>
+                        <li><strong>Результат:</strong> Ускорение обработки входящих заявок в 5 раз, поддержка 24/7.
+                        </li>
                     </ul>
                 </div>
             </section>
 
             <section>
                 <h3>Ключевые компетенции</h3>
-                <div class="skills-section" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                <div class="skills-section"
+                    style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
                     <div style="background-color: var(--border-color); padding: 20px; border-radius: 8px;">
                         <h4 style="margin: 0 0 10px 0; font-size: 1.1em;">Автоматизация & AI</h4>
-                        <p style="margin: 0; line-height: 1.5; color: var(--text-color);">n8n, Make, Роботы Битрикс24, Prompt Engineering, Gemini 3 Pro.</p>
+                        <p style="margin: 0; line-height: 1.5; color: var(--text-color);">n8n, Make, Роботы Битрикс24,
+                            Prompt Engineering, Gemini 3 Pro.</p>
                     </div>
                     <div style="background-color: var(--border-color); padding: 20px; border-radius: 8px;">
                         <h4 style="margin: 0 0 10px 0; font-size: 1.1em;">Бизнес-аналитика</h4>
-                        <p style="margin: 0; line-height: 1.5; color: var(--text-color);">BPMN (аудит), PDD/SDD (тех. документация), T&D (обучение персонала).</p>
+                        <p style="margin: 0; line-height: 1.5; color: var(--text-color);">BPMN (аудит), PDD/SDD (тех.
+                            документация), T&D (обучение персонала).</p>
                     </div>
                     <div style="background-color: var(--border-color); padding: 20px; border-radius: 8px;">
                         <h4 style="margin: 0 0 10px 0; font-size: 1.1em;">Разработка</h4>
-                        <p style="margin: 0; line-height: 1.5; color: var(--text-color);">Python, API/Webhooks, Lovable.dev, Rork, Firebase.</p>
+                        <p style="margin: 0; line-height: 1.5; color: var(--text-color);">Python, API/Webhooks,
+                            Lovable.dev, Rork, Firebase.</p>
                     </div>
-                    <div style="background-color: var(--border-color); padding: 20px; border-radius: 8px;">
-                        <h4 style="margin: 0 0 10px 0; font-size: 1.1em;">Личностные качества</h4>
-                        <p style="margin: 0; line-height: 1.5; color: var(--text-color);">Опыт публичных выступлений на аудиторию до 7 000 человек. Лидерство, фокус на результат (ROI).</p>
+                    <div
+                        style="background-color: var(--border-color); padding: 20px; border-radius: 8px; grid-column: 1 / -1;">
+                        <h4 style="margin: 0 0 15px 0; font-size: 1.1em;">Личностные качества (Soft Skills)</h4>
+                        <ul style="margin: 0; padding-left: 20px; line-height: 1.6; color: var(--text-color);">
+                            <li style="margin-bottom: 10px;"><strong>Публичная экспертиза и лидерство:</strong> опыт
+                                выступлений на 7 000+ человек, навыки убеждения и защиты сложных тех. решений.</li>
+                            <li style="margin-bottom: 10px;"><strong>Системное мышление:</strong> проектирование
+                                архитектуры процессов с фокусом на масштабируемость и ROI.</li>
+                            <li style="margin-bottom: 10px;"><strong>Высокая скорость обучения</strong> (LLM, RPA,
+                                No-code) и внедрение инноваций в реальный сектор.</li>
+                            <li style="margin-bottom: 0;"><strong>Эмоциональный интеллект:</strong> опыт управления
+                                конфликтами и построения команд в EdTech и IT.</li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -328,18 +423,30 @@
             </section>
 
             <section style="margin: 40px 0;">
-                <div style="background-color: var(--border-color); border-left: 4px solid var(--secondary-color); padding: 25px 30px; font-style: italic; color: #c5c6c7; font-size: 1.05em; line-height: 1.6; border-radius: 0 8px 8px 0; position: relative;">
-                    <p style="margin-top: 0;">«Я верю, что будущее бизнеса — в синергии человеческого потенциала и технологий. Мой путь начался с глубокого погружения в HR и психологию найма, что позволило мне увидеть главную проблему современных компаний: колоссальные потери времени на однотипные операции.</p>
-                    <p style="margin-bottom: 0;">Сегодня я решаю эту проблему как системный архитектор. Я не просто настраиваю софт — я пересобираю бизнес-логику. Мой опыт позволяет мне говорить на одном языке и с HR-директором, и с разработчиком, создавая решения, которые действительно работают и приносят измеримую прибыль.»</p>
+                <div
+                    style="background-color: var(--border-color); border-left: 4px solid var(--secondary-color); padding: 25px 30px; font-style: italic; color: #c5c6c7; font-size: 1.05em; line-height: 1.6; border-radius: 0 8px 8px 0; position: relative;">
+                    <p style="margin-top: 0;">«Я верю, что будущее бизнеса — в синергии человеческого потенциала и
+                        технологий. Мой путь начался с глубокого погружения в HR и психологию найма, что позволило мне
+                        увидеть главную проблему современных компаний: колоссальные потери времени на однотипные
+                        операции.</p>
+                    <p style="margin-bottom: 0;">Сегодня я решаю эту проблему как системный архитектор. Я не просто
+                        настраиваю софт — я пересобираю бизнес-логику. Мой опыт позволяет мне говорить на одном языке и
+                        с HR-директором, и с разработчиком, создавая решения, которые действительно работают и приносят
+                        измеримую прибыль.»</p>
                 </div>
             </section>
 
             <section>
                 <h3>Контакты и аудит</h3>
-                <div class="footer-section" style="background-color: var(--border-color); padding: 30px; border-radius: 10px; text-align: center; margin-top: 20px;">
-                    <p style="font-size: 1.25em; color: var(--primary-color); font-weight: bold; margin-bottom: 10px; font-style: normal;">Готовы перевести свой бизнес на автопилот?</p>
-                    <p style="font-size: 1.1em; color: var(--text-color); margin-bottom: 30px; font-style: normal;">Давайте обсудим, какие процессы в вашей компании можно роботизировать уже завтра.</p>
-                    <a href="https://t.me/it_pro_kg" target="_blank" class="contact-button" style="margin-top: 0; padding: 15px 35px; font-size: 1.1em;">Записаться на аудит процессов</a>
+                <div class="footer-section"
+                    style="background-color: var(--border-color); padding: 30px; border-radius: 10px; text-align: center; margin-top: 20px;">
+                    <p
+                        style="font-size: 1.25em; color: var(--primary-color); font-weight: bold; margin-bottom: 10px; font-style: normal;">
+                        Готовы перевести свой бизнес на автопилот?</p>
+                    <p style="font-size: 1.1em; color: var(--text-color); margin-bottom: 30px; font-style: normal;">
+                        Давайте обсудим, какие процессы в вашей компании можно роботизировать уже завтра.</p>
+                    <a href="https://t.me/it_pro_kg" target="_blank" class="contact-button"
+                        style="margin-top: 0; padding: 15px 35px; font-size: 1.1em;">Записаться на аудит процессов</a>
                 </div>
             </section>
 
@@ -347,4 +454,5 @@
     </div>
 
 </body>
+
 </html>
